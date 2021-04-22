@@ -25,13 +25,13 @@ function f_fact($n) {
 
 
 
-function f_equation($x) {
+function f_equation($x, $n) {
     $result = 1;
-    for($j = 1; $j <= $x; $j++) {
+    for($j = 1; $j <= $n; $j++) {
         $result = $result + (f_pow($x, $j) / f_fact($j));
     }
-    return $result + $F;
+    return $result;
 
 }
 
-echo f_equation(12);
+echo f_equation(1, 100);
